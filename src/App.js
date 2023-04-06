@@ -3,7 +3,7 @@ import './App.css';
 import { Button } from './Button/Button.js';
 
 function App() {
-  console.log('hello')
+  console.log('hello');
   return (
     <div className="App">
       <header className="App-header">
