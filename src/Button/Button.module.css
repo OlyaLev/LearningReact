@@ -1,7 +1,11 @@
 .myStyle {
   color: #ffffff;
-  background: #15485a;
+  background: #006972;
   border: none;
   padding: 10px 30px;
   border-radius: 100px;
+}
+
+.fullWidthClassName {
+  width: 100%;
 }
