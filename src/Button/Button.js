@@ -7,7 +7,6 @@
 // };
 
 import styles from './Button.module.css';
-
 export const Button = (props) => {
   const fullWidthClassName = props.fullWidth ? styles.fullWidthClassName : '';
   console.log(props);
