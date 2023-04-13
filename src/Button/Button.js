@@ -10,12 +10,24 @@ import styles from './Button.module.css';
 export const Button = (props) => {
   const { children, fullWidth, variant } = props;
   const isFullWidth = fullWidth ? styles.fullWidth : '';
-  const outlined = variant === 'outlined' ? styles.outlinedButton : '';
-  const result =
-    variant === 'filled'
-      ? styles.buttonCommon + ' ' + isFullWidth + ' ' + styles.filledButton
-      : styles.buttonCommon + ' ' + styles.mainColors + ' ' + isFullWidth + ' ' + outlined;
-  console.log(props);
-
-  return <button className={result}>{children}</button>;
+  const isOutlined = variant === 'outlined' ? styles.outlinedButton : '';
+  const isMainColors = variant === 'filled' ? '' : styles.mainColors;
+  const isFilled = variant === 'filled' ? styles.filledButton : '';
+  return (
+    <button
+      className={
+        styles.buttonCommon +
+        ' ' +
+        isMainColors +
+        ' ' +
+        isFullWidth +
+        ' ' +
+        isFilled +
+        ' ' +
+        isOutlined
+      }
+    >
+      {children}
+    </button>
+  );
 };
