@@ -5,17 +5,17 @@
 }
 
 .mainColors {
-  color: #006972;
+  color: var(--primary-color);
   background-color: #ffffff;
 }
 
 .filledButton {
   color: #ffffff;
-  background-color: #006972;
+  background-color: var(--primary-color);
 }
 
 .outlinedButton {
-  border: solid 1px #6f797a;
+  border: solid 1px var(--color-outline);
 }
 
 .fullWidth {
