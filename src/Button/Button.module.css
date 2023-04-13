@@ -5,13 +5,13 @@
 }
 
 .textButton {
-  background-color: #ffffff;
   color: #006972;
+  background-color: #ffffff;
 }
 
 .filledButton {
   color: #ffffff;
-  background: #006972;
+  background-color: #006972;
 }
 
 .outlinedButton {
