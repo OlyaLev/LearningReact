@@ -8,11 +8,15 @@
 
 import styles from './Button.module.css';
 export const Button = (props) => {
-  const fullWidthClassName = props.fullWidth ? styles.fullWidthClassName : '';
+  const { children } = props;
+  const fullWidth = props.fullWidth ? styles.fullWidth : '';
+  const outlined = props.variant === 'outlined' ? styles.whiteButton : '';
   console.log(props);
   return (
-    <div>
-      <button className={styles.myStyle + ' ' + fullWidthClassName}>Button</button>
-    </div>
+    <button
+      className={styles.buttonCommon + ' ' + styles.blueButton + ' ' + fullWidth + ' ' + outlined}
+    >
+      {children}
+    </button>
   );
 };

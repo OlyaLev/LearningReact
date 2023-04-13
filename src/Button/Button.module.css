@@ -1,11 +1,20 @@
-.myStyle {
-  color: #ffffff;
-  background: #006972;
-  border: none;
+.buttonCommon {
   padding: 10px 30px;
   border-radius: 100px;
 }
 
-.fullWidthClassName {
+.blueButton {
+  color: #ffffff;
+  background: #006972;
+  border: none;
+}
+
+.whiteButton {
+  color: #006972;
+  background: #ffffff;
+  border: solid 2px #6f797a;
+}
+
+.fullWidth {
   width: 100%;
 }
