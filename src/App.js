@@ -9,6 +9,7 @@ function App() {
       <Button variant="outlined">Enabled</Button>
       <Button variant="filled">Enabled</Button>
       <Button variant>Enabled</Button>
+      <Button variant="text">Enabled</Button>
     </div>
   );
 }

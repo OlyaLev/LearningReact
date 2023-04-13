@@ -8,13 +8,24 @@
 
 import styles from './Button.module.css';
 export const Button = (props) => {
-  const { children } = props;
-  const fullWidth = props.fullWidth ? styles.fullWidth : '';
-  const outlined = props.variant === 'outlined' ? styles.whiteButton : '';
+  const { children, fullWidth, variant } = props;
+  const isFullWidth = fullWidth ? styles.fullWidth : '';
+  const outlined = variant === 'outlined' ? styles.outlinedButton : '';
+  const filled = variant === 'filled' ? styles.filledButton : '';
   console.log(props);
   return (
     <button
-      className={styles.buttonCommon + ' ' + styles.blueButton + ' ' + fullWidth + ' ' + outlined}
+      className={
+        styles.buttonCommon +
+        ' ' +
+        styles.textButton +
+        ' ' +
+        isFullWidth +
+        ' ' +
+        outlined +
+        ' ' +
+        filled
+      }
     >
       {children}
     </button>

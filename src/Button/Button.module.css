@@ -1,18 +1,21 @@
 .buttonCommon {
   padding: 10px 30px;
   border-radius: 100px;
-}
-
-.blueButton {
-  color: #ffffff;
-  background: #006972;
   border: none;
 }
 
-.whiteButton {
+.textButton {
+  background-color: #ffffff;
   color: #006972;
-  background: #ffffff;
-  border: solid 2px #6f797a;
+}
+
+.filledButton {
+  color: #ffffff;
+  background: #006972;
+}
+
+.outlinedButton {
+  border: solid 1px #6f797a;
 }
 
 .fullWidth {
