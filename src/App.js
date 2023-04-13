@@ -1,3 +1,5 @@
+import './tokens.css';
+import './theme.light.css';
 import './App.css';
 import { Button } from './Button/Button.js';
 
