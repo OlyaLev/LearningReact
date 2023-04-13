@@ -11,22 +11,11 @@ export const Button = (props) => {
   const { children, fullWidth, variant } = props;
   const isFullWidth = fullWidth ? styles.fullWidth : '';
   const outlined = variant === 'outlined' ? styles.outlinedButton : '';
+  const result =
+    variant === 'filled'
+      ? styles.buttonCommon + ' ' + isFullWidth + ' ' + styles.filledButton
+      : styles.buttonCommon + ' ' + styles.mainColors + ' ' + isFullWidth + ' ' + outlined;
   console.log(props);
-  if (variant === 'filled') {
-    return (
-      <button className={styles.buttonCommon + ' ' + isFullWidth + ' ' + styles.filledButton}>
-        {children}
-      </button>
-    );
-  } else {
-    return (
-      <button
-        className={
-          styles.buttonCommon + ' ' + styles.textButton + ' ' + isFullWidth + ' ' + outlined
-        }
-      >
-        {children}
-      </button>
-    );
-  }
+
+  return <button className={result}>{children}</button>;
 };
