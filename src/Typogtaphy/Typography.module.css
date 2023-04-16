@@ -1,0 +1,16 @@
+.typographyFont {
+  font-family: 'Roboto';
+}
+
+.primaryColor {
+  color: var(--md-sys-color-primary-light);
+}
+
+.primaryContainerColor {
+  color: var(--md-sys-color-primary-container-light);
+}
+
+.onPrimaryColor {
+  color: var(--md-sys-color-on-primary-light);
+  background-color: #000000;
+}
