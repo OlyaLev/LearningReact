@@ -2,7 +2,7 @@ import './tokens.css';
 import './theme.light.css';
 import './App.css';
 import { Button } from './Button/Button.js';
-import { Typography } from './Typogtaphy/Typography.js';
+import { Typography } from './Typography/Typography.js';
 
 function App() {
   return (
