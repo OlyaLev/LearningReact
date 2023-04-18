@@ -15,7 +15,9 @@ function App() {
       <Button variant="text">Enabled</Button>
       <Typography color="primary">This is "primary" text</Typography>
       <Typography color="primaryContainer">This is "primaryContainer" text</Typography>
-      <Typography color="onPrimary">This is "onPrimary" text</Typography>
+      <div className="backgroundTest">
+        <Typography color="onPrimary">This is "onPrimary" text</Typography>
+      </div>
       <Typography color>This is basic text</Typography>
     </div>
   );

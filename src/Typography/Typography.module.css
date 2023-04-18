@@ -1,5 +1,5 @@
 .typographyFont {
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 .primaryColor {
@@ -12,5 +12,4 @@
 
 .onPrimaryColor {
   color: var(--md-sys-color-on-primary-light);
-  background-color: #000000;
 }

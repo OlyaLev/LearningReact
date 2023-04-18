@@ -7,5 +7,9 @@ const colors = {
 export const Typography = (props) => {
   const { children, color } = props;
   const colorStyle = colors[color];
-  return <p className={colorStyle}>{children}</p>;
+  return (
+    <div>
+      <p className={colorStyle}>{children}</p>
+    </div>
+  );
 };
