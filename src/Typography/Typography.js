@@ -31,12 +31,27 @@ const colors = {
   outlineVariant: styles.outlineVariant,
   scrim: styles.scrim,
 };
+const variants = {
+  displayLarge: styles.displayLarge,
+  displayMedium: styles.displayMedium,
+  displaySmall: styles.displaySmall,
+  headlineLarge: styles.headlineLarge,
+  headlineMedium: styles.headlineMedium,
+  headlineSmall: styles.headlineSmall,
+  labelLarge: styles.labelLarge,
+  labelMedium: styles.labelMedium,
+  labelSmall: styles.labelSmall,
+  titleLarge: styles.titleLarge,
+  titleMedium: styles.titleMedium,
+  titleSmall: styles.titleSmall,
+};
 export const Typography = (props) => {
-  const { children, color } = props;
+  const { children, color, variant } = props;
   const colorStyle = colors[color];
+  const variantStyle = variants[variant];
   return (
     <div>
-      <p className={colorStyle}>{children}</p>
+      <p className={styles.typographyFont + ' ' + colorStyle + ' ' + variantStyle}>{children}</p>
     </div>
   );
 };

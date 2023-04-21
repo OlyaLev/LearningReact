@@ -19,6 +19,18 @@ function App() {
         <Typography color="onPrimary">This is "onPrimary" text</Typography>
       </div>
       <Typography color>This is basic text</Typography>
+      <Typography variant="displayLarge">Welcome to the show</Typography>
+      <Typography variant="displayMedium">Welcome to the show</Typography>
+      <Typography variant="displaySmall">Welcome to the show</Typography>
+      <Typography variant="headlineLarge">Welcome to the show</Typography>
+      <Typography variant="headlineMedium">Welcome to the show</Typography>
+      <Typography variant="headlineSmall">Welcome to the show</Typography>
+      <Typography variant="titleLarge">Welcome to the show</Typography>
+      <Typography variant="titleMedium">Welcome to the show</Typography>
+      <Typography variant="titleSmall">Welcome to the show</Typography>
+      <Typography variant="labelLarge">Welcome to the show</Typography>
+      <Typography variant="labelMedium">Welcome to the show</Typography>
+      <Typography variant="labelSmall">Welcome to the show</Typography>
     </div>
   );
 }
