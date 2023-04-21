@@ -1,3 +1,4 @@
+import { Typography } from '../Typography/Typography';
 import styles from './Button.module.css';
 export const Button = (props) => {
   const { children, fullWidth, variant } = props;
@@ -19,7 +20,7 @@ export const Button = (props) => {
         outlinedStyle
       }
     >
-      {children}
+      <Typography variant="labelLarge">{children}</Typography>
     </button>
   );
 };
