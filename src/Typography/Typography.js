@@ -50,8 +50,6 @@ export const Typography = (props) => {
   const colorStyle = colors[color];
   const variantStyle = variants[variant];
   return (
-    <div>
-      <p className={styles.typographyFont + ' ' + colorStyle + ' ' + variantStyle}>{children}</p>
-    </div>
+    <p className={styles.typographyBase + ' ' + colorStyle + ' ' + variantStyle}>{children}</p>
   );
 };

@@ -1,4 +1,5 @@
-.typographyFont {
+.typographyBase {
+  margin: 0px;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 

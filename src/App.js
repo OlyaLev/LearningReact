@@ -7,12 +7,24 @@ import { Typography } from './Typography/Typography.js';
 function App() {
   return (
     <div className="App">
-      <Button>Button</Button>
-      <Button fullWidth>Button</Button>
-      <Button variant="outlined">Enabled</Button>
-      <Button variant="filled">Enabled</Button>
-      <Button variant>Enabled</Button>
-      <Button variant="text">Enabled</Button>
+      <Button>
+        <Typography variant="labelLarge">Button</Typography>
+      </Button>
+      <Button fullWidth>
+        <Typography variant="labelLarge">Button</Typography>
+      </Button>
+      <Button variant="outlined">
+        <Typography variant="labelLarge">Enabled</Typography>
+      </Button>
+      <Button variant="filled">
+        <Typography variant="labelLarge">Enabled</Typography>
+      </Button>
+      <Button variant>
+        <Typography variant="labelLarge">Enabled</Typography>
+      </Button>
+      <Button variant="text">
+        <Typography variant="labelLarge">Enabled</Typography>
+      </Button>
       <Typography color="primary">This is "primary" text</Typography>
       <Typography color="primaryContainer">This is "primaryContainer" text</Typography>
       <div className="backgroundTest">
