@@ -62,14 +62,14 @@
   align-items: stretch;
 }
 
-.grow {
-  flex-grow: 1;
-}
-
 .wrap {
   flex-wrap: wrap;
 }
 
 .wrapReverse {
   flex-wrap: wrap-reverse;
+}
+
+.noWrap {
+  flex-wrap: nowrap;
 }
