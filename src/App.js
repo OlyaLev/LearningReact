@@ -3,16 +3,64 @@ import './theme.light.css';
 import './App.css';
 import { Button } from './Button/Button.js';
 import { Typography } from './Typography/Typography.js';
+import { Box } from './Box/Box.js';
 
 function App() {
   return (
     <div className="App">
-      <Button>Button</Button>
+      <Typography>Filled buttons</Typography>
+      <Box direction="column">
+        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+          <Button variant="filled">Button</Button>
+          <Button variant="filled">Button</Button>
+          <Button variant="filled">Button</Button>
+          <Button variant="filled">Button</Button>
+          <Button variant="filled">Button</Button>
+        </Box>
+        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+          <Button variant="filled">Button</Button>
+          <Button variant="filled">Button</Button>
+          <Button variant="filled">Button</Button>
+          <Button variant="filled">Button</Button>
+          <Button variant="filled">Button</Button>
+        </Box>
+      </Box>
+      <Typography>Outlined buttons</Typography>
+      <Box direction="column">
+        <Box direction="row" justifyContent="start" alignItems="center" wrap="noWrap">
+          <Button variant="outlined">Enabled</Button>
+          <Button variant="outlined">Enabled</Button>
+          <Button variant="outlined">Enabled</Button>
+          <Button variant="outlined">Enabled</Button>
+          <Button variant="outlined">Enabled</Button>
+        </Box>
+        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+          <Button variant="outlined">Enabled</Button>
+          <Button variant="outlined">Enabled</Button>
+          <Button variant="outlined">Enabled</Button>
+          <Button variant="outlined">Enabled</Button>
+          <Button variant="outlined">Enabled</Button>
+        </Box>
+      </Box>
+      <Typography>Text buttons</Typography>
+      <Box direction="column">
+        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+          <Button variant="text">Enabled</Button>
+          <Button variant="text">Enabled</Button>
+          <Button variant="text">Enabled</Button>
+          <Button variant="text">Enabled</Button>
+          <Button variant="text">Enabled</Button>
+        </Box>
+        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+          <Button variant="text">Enabled</Button>
+          <Button variant="text">Enabled</Button>
+          <Button variant="text">Enabled</Button>
+          <Button variant="text">Enabled</Button>
+          <Button variant="text">Enabled</Button>
+        </Box>
+      </Box>
       <Button fullWidth>Button</Button>
-      <Button variant="outlined">Enabled</Button>
-      <Button variant="filled">Enabled</Button>
-      <Button variant>Enabled</Button>
-      <Button variant="text">Enabled</Button>
+
       <Typography color="primary">This is "primary" text</Typography>
       <Typography color="primaryContainer">This is "primaryContainer" text</Typography>
       <div className="backgroundTest">

@@ -18,47 +18,47 @@
   flex-direction: column-reverse;
 }
 
-.alignXStart {
+.justifyContentStart {
   justify-content: flex-start;
 }
 
-.alignXEnd {
+.justifyContentEnd {
   justify-content: flex-end;
 }
 
-.alignXCenter {
+.justifyContentCenter {
   justify-content: center;
 }
 
-.alignXSpaceBetween {
+.justifyContentSpaceBetween {
   justify-content: space-between;
 }
 
-.alignXSpaceAround {
+.justifyContentSpaceAround {
   justify-content: space-around;
 }
 
-.alignXSpaceEvenly {
+.justifyContentSpaceEvenly {
   justify-content: space-evenly;
 }
 
-.alignYStart {
+.alignItemsStart {
   align-items: flex-start;
 }
 
-.alignYEnd {
+.alignItemsEnd {
   align-items: flex-end;
 }
 
-.alignYCenter {
+.alignItemsCenter {
   align-items: center;
 }
 
-.alignYBaseline {
+.alignItemsBaseline {
   align-items: baseline;
 }
 
-.alignYStretch {
+.alignItemsStretch {
   align-items: stretch;
 }
 

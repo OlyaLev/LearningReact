@@ -11,28 +11,28 @@ const wraps = {
   noWrap: styles.noWrap,
 };
 
-const alignXVariants = {
-  alignXStart: styles.alignXStart,
-  alignXEnd: styles.alignXEnd,
-  alignXCenter: styles.alignXCenter,
-  alignXSpaceBetween: styles.alignXSpaceBetween,
-  alignXSpaceAround: styles.alignXSpaceAround,
-  alignXSpaceEvenly: styles.alignXSpaceEvenly,
+const justifyContentVariants = {
+  start: styles.justifyContentStart,
+  end: styles.justifyContentEnd,
+  center: styles.justifyContentCenter,
+  spaceBetween: styles.justifyContentSpaceBetween,
+  spaceAround: styles.justifyContentSpaceAround,
+  spaceEvenly: styles.justifyContentSpaceEvenly,
 };
 
-const alignYVariants = {
-  alignYStart: styles.alignYStart,
-  alignYEnd: styles.alignYEnd,
-  alignYCenter: styles.alignYCenter,
-  alignYBaseline: styles.alignYBaseline,
-  alignYStretch: styles.alignYStretch,
+const alignItemsVariants = {
+  start: styles.alignItemsStart,
+  end: styles.alignItemsEnd,
+  center: styles.alignItemsCenter,
+  baseline: styles.alignItemsBaseline,
+  stretch: styles.alignItemsStretch,
 };
 
 export const Box = (props) => {
-  const { direction, alignX, alignY, wrap } = props;
+  const { children, direction, justifyContent, alignItems, wrap } = props;
   const directionStyle = directions[direction];
-  const alignXStyle = alignXVariants[alignX];
-  const alignYStyle = alignYVariants[alignY];
+  const justifyContentStyle = justifyContentVariants[justifyContent];
+  const alignItemsStyle = alignItemsVariants[alignItems];
   const wrapStyle = wraps[wrap];
   return (
     <div
@@ -41,12 +41,14 @@ export const Box = (props) => {
         ' ' +
         directionStyle +
         ' ' +
-        alignXStyle +
+        justifyContentStyle +
         ' ' +
-        alignYStyle +
+        alignItemsStyle +
         ' ' +
         wrapStyle
       }
-    ></div>
+    >
+      {children}
+    </div>
   );
 };
