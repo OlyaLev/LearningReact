@@ -1,4 +1,5 @@
 import styles from './Box.module.css';
+import { type ReactNode } from 'react';
 const directions = {
   row: styles.row,
   rowReverse: styles.rowReverse,
@@ -27,8 +28,15 @@ const alignItemsVariants = {
   baseline: styles.alignItemsBaseline,
   stretch: styles.alignItemsStretch,
 };
+type Props = {
+  direction?: 'row' | 'rowReverse' | 'column' | 'columnRweverse';
+  justifyContent?: 'start' | 'end' | 'center' | 'spaceBetween' | 'spaceAround' | 'spaceEvenly';
+  alignItems?: 'start' | 'end' | 'center' | 'baseline' | 'stretch';
+  wrap?: 'wrap' | 'wrapReverse' | 'noWrap';
+  children?: ReactNode;
+};
 
-export const Box = (props) => {
+export const Box = (props: Props) => {
   const { children, direction, justifyContent, alignItems, wrap } = props;
   const directionStyle = directions[direction];
   const justifyContentStyle = justifyContentVariants[justifyContent];

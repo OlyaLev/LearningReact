@@ -1,4 +1,5 @@
 import styles from './Typography.module.css';
+import { type ReactNode } from 'react';
 const colors = {
   primary: styles.primary,
   primaryContainer: styles.primaryContainer,
@@ -45,7 +46,54 @@ const variants = {
   titleMedium: styles.titleMedium,
   titleSmall: styles.titleSmall,
 };
-export const Typography = (props) => {
+type Props = {
+  color?:
+    | 'primary'
+    | 'primaryContainer'
+    | 'onPrimary'
+    | 'onPrimaryContainer'
+    | 'secondary'
+    | 'secondaryContainer'
+    | 'onSecondary'
+    | 'onSecondaryContainer'
+    | 'tertiary'
+    | 'tertiaryContainer'
+    | 'onTertiary'
+    | 'onTertiaryContainer'
+    | 'error'
+    | 'errorContainer'
+    | 'onError'
+    | 'onErrorContainer'
+    | 'outline'
+    | 'background'
+    | 'onBackground'
+    | 'surface'
+    | 'onSurface'
+    | 'surfaceVariant'
+    | 'onSurfaceVariant'
+    | 'inverseSurface'
+    | 'inverseOnSurface'
+    | 'inversePrimary'
+    | 'shadow'
+    | 'surfaceTint'
+    | 'outlineVariant'
+    | 'scrim';
+  variant?:
+    | 'displayLarge'
+    | 'displayMedium'
+    | 'displaySmall'
+    | 'headlineLarge'
+    | 'headlineMedium'
+    | 'headlineSmall'
+    | 'labelLarge'
+    | 'labelMedium'
+    | 'labelSmall'
+    | 'titleLarge'
+    | 'titleMedium'
+    | 'titleSmall';
+  children?: ReactNode;
+};
+export const Typography = (props: Props) => {
   const { children, color, variant } = props;
   const colorStyle = colors[color];
   const variantStyle = variants[variant];
