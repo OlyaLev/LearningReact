@@ -1,5 +1,6 @@
 .typographyBase {
   margin: 0px;
+  text-align: start;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
