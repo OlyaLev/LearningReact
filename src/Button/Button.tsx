@@ -1,6 +1,12 @@
 import { Typography } from '../Typography/Typography';
 import styles from './Button.module.css';
-export const Button = (props) => {
+import { type ReactNode } from 'react';
+type Props = {
+  fullWidth?: boolean;
+  variant?: 'outlined' | 'filled' | 'text';
+  children?: ReactNode;
+};
+export const Button = (props: Props) => {
   const { children, fullWidth, variant } = props;
   const fullWidthStyle = fullWidth ? styles.fullWidth : '';
   const outlinedStyle = variant === 'outlined' ? styles.outlinedButton : '';

@@ -1,9 +1,9 @@
 import './tokens.css';
 import './theme.light.css';
 import './App.css';
-import { Button } from './Button/Button.tsx';
-import { Typography } from './Typography/Typography.tsx';
-import { Box } from './Box/Box.tsx';
+import { Button } from './Button/Button';
+import { Typography } from './Typography/Typography';
+import { Box } from './Box/Box';
 
 function App() {
   return (
