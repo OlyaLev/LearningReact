@@ -5,12 +5,10 @@
 }
 
 .mainColors {
-  color: var(--md-sys-color-primary);
   background-color: var(--md-sys-color-on-primary-light);
 }
 
 .filledButton {
-  color: var(--md-sys-color-on-primary-light);
   background-color: var(--md-sys-color-primary);
 }
 

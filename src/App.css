@@ -45,3 +45,7 @@
   --primary-color: #006972;
   --color-outline: #6f797a;
 } */
+
+body {
+  background-color: var(--md-sys-color-background);
+}

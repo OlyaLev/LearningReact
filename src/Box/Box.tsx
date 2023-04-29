@@ -6,6 +6,7 @@ const directions = {
   column: styles.column,
   columnReverse: styles.columnReverse,
 };
+
 const wraps = {
   wrap: styles.wrap,
   wrapReverse: styles.wrapReverse,
@@ -28,8 +29,9 @@ const alignItemsVariants = {
   baseline: styles.alignItemsBaseline,
   stretch: styles.alignItemsStretch,
 };
+
 type Props = {
-  direction?: 'row' | 'rowReverse' | 'column' | 'columnRweverse';
+  direction?: 'row' | 'rowReverse' | 'column' | 'columnReverse';
   justifyContent?: 'start' | 'end' | 'center' | 'spaceBetween' | 'spaceAround' | 'spaceEvenly';
   alignItems?: 'start' | 'end' | 'center' | 'baseline' | 'stretch';
   wrap?: 'wrap' | 'wrapReverse' | 'noWrap';
@@ -37,7 +39,13 @@ type Props = {
 };
 
 export const Box = (props: Props) => {
-  const { children, direction, justifyContent, alignItems, wrap } = props;
+  const {
+    direction = 'row',
+    justifyContent = 'start',
+    alignItems = 'start',
+    wrap = 'noWrap',
+    children,
+  } = props;
   const directionStyle = directions[direction];
   const justifyContentStyle = justifyContentVariants[justifyContent];
   const alignItemsStyle = alignItemsVariants[alignItems];

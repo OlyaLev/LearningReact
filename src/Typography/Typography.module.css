@@ -207,3 +207,24 @@
   line-height: var(--md-sys-typescale-title-small-line-height);
   letter-spacing: var(--md-sys-typescale-title-small-letter-spacing);
 }
+
+.bodyLarge {
+  font-weight: var(--md-sys-typescale-body-large-font-weight);
+  font-size: var(--md-sys-typescale-body-large-font-size);
+  line-height: var(--md-sys-typescale-body-large-line-height);
+  letter-spacing: var(--md-sys-typescale-body-large-letter-spacing);
+}
+
+.bodyMedium {
+  font-weight: var(--md-sys-typescale-body-medium-font-weight);
+  font-size: var(--md-sys-typescale-body-medium-font-size);
+  line-height: var(--md-sys-typescale-body-medium-line-height);
+  letter-spacing: var(--md-sys-typescale-body-medium-letter-spacing);
+}
+
+.bodySmall {
+  font-weight: var(--md-sys-typescale-body-small-font-weight);
+  font-size: var(--md-sys-typescale-body-small-font-size);
+  line-height: var(--md-sys-typescale-body-small-line-height);
+  letter-spacing: var(--md-sys-typescale-body-small-letter-spacing);
+}

@@ -45,6 +45,9 @@ const variants = {
   titleLarge: styles.titleLarge,
   titleMedium: styles.titleMedium,
   titleSmall: styles.titleSmall,
+  bodyLarge: styles.bodyLarge,
+  bodyMedium: styles.bodyMedium,
+  bodySmall: styles.bodySmall,
 };
 type Props = {
   color?:
@@ -94,7 +97,7 @@ type Props = {
   children?: ReactNode;
 };
 export const Typography = (props: Props) => {
-  const { children, color, variant } = props;
+  const { children, color = 'onBackground', variant = 'bodyMedium' } = props;
   const colorStyle = colors[color];
   const variantStyle = variants[variant];
   return (
