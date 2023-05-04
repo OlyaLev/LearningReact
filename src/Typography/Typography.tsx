@@ -81,6 +81,11 @@ type Props = {
     | 'surfaceTint'
     | 'outlineVariant'
     | 'scrim';
+  /**
+   * Prop to choose which writing style from MD3 to use
+   * @example
+   * <Typography variant="displayLarge">Some text</Typography>
+   */
   variant?:
     | 'displayLarge'
     | 'displayMedium'
@@ -96,6 +101,11 @@ type Props = {
     | 'titleSmall';
   children?: ReactNode;
 };
+/**
+ * Typography component, implementing **Material Design 3** writing. Use prop `variant` to choose which style
+ * from material design spec to use
+ * @see https://m3.material.io/styles/typography/overview
+ */
 export const Typography = (props: Props) => {
   const { children, color = 'onBackground', variant = 'bodyMedium' } = props;
   const colorStyle = colors[color];

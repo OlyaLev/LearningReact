@@ -34,10 +34,23 @@ type Props = {
   direction?: 'row' | 'rowReverse' | 'column' | 'columnReverse';
   justifyContent?: 'start' | 'end' | 'center' | 'spaceBetween' | 'spaceAround' | 'spaceEvenly';
   alignItems?: 'start' | 'end' | 'center' | 'baseline' | 'stretch';
+  /**
+   * Prop to set whether items are forced onto one line or can wrap onto multiple lines
+   * @example
+   * <Box wrap="wrap">
+   * <div>item 1</div>
+   * <div>item 2</div>
+   * </Box>
+   */
   wrap?: 'wrap' | 'wrapReverse' | 'noWrap';
   children?: ReactNode;
 };
-
+/**
+ * Box component to set elements' positioning by using flex. Use prop `direction` to choose
+ * horizontal or vertical alignment of items. Use prop `justifyContent`
+ * to define the alignment along the main axis and prop `alignItems`
+ * to define the alignment perpendicular to the main axis
+ */
 export const Box = (props: Props) => {
   const {
     direction = 'row',

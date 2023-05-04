@@ -66,7 +66,7 @@ function App() {
       <div className="backgroundTest">
         <Typography color="onPrimary">This is "onPrimary" text</Typography>
       </div>
-      <Typography color>This is basic text</Typography>
+      <Typography>This is basic text</Typography>
       <Typography variant="displayLarge">Welcome to the show</Typography>
       <Typography variant="displayMedium">Welcome to the show</Typography>
       <Typography variant="displaySmall">Welcome to the show</Typography>
