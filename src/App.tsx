@@ -10,14 +10,14 @@ function App() {
     <div className="App">
       <Typography>Filled buttons</Typography>
       <Box direction="column">
-        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
           <Button variant="filled">Button</Button>
           <Button variant="filled">Button</Button>
           <Button variant="filled">Button</Button>
           <Button variant="filled">Button</Button>
           <Button variant="filled">Button</Button>
         </Box>
-        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
           <Button variant="filled">Button</Button>
           <Button variant="filled">Button</Button>
           <Button variant="filled">Button</Button>
@@ -27,14 +27,14 @@ function App() {
       </Box>
       <Typography>Outlined buttons</Typography>
       <Box direction="column">
-        <Box direction="row" justifyContent="start" alignItems="center" wrap="noWrap">
+        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
           <Button variant="outlined">Enabled</Button>
           <Button variant="outlined">Enabled</Button>
           <Button variant="outlined">Enabled</Button>
           <Button variant="outlined">Enabled</Button>
           <Button variant="outlined">Enabled</Button>
         </Box>
-        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
           <Button variant="outlined">Enabled</Button>
           <Button variant="outlined">Enabled</Button>
           <Button variant="outlined">Enabled</Button>
@@ -44,14 +44,14 @@ function App() {
       </Box>
       <Typography>Text buttons</Typography>
       <Box direction="column">
-        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
           <Button variant="text">Enabled</Button>
           <Button variant="text">Enabled</Button>
           <Button variant="text">Enabled</Button>
           <Button variant="text">Enabled</Button>
           <Button variant="text">Enabled</Button>
         </Box>
-        <Box direction="row" justifyContent="start" alignItems="center" wrap="wrap">
+        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
           <Button variant="text">Enabled</Button>
           <Button variant="text">Enabled</Button>
           <Button variant="text">Enabled</Button>

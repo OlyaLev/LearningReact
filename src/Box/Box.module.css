@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.width {
+  width: 100%;
+}
+
 .row {
   flex-direction: row;
 }
