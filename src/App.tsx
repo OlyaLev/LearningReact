@@ -8,55 +8,97 @@ import { Box } from './Box/Box';
 function App() {
   return (
     <div className="App">
-      <Typography>Filled buttons</Typography>
-      <Box direction="column">
-        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
-          <Button variant="filled">Button</Button>
-          <Button variant="filled">Button</Button>
-          <Button variant="filled">Button</Button>
-          <Button variant="filled">Button</Button>
-          <Button variant="filled">Button</Button>
+      <Box direction="column" ml="50px" mt="20px">
+        <Typography>Filled buttons</Typography>
+        <Box direction="column" width="100%">
+          <Box
+            direction="row"
+            justifyContent="spaceBetween"
+            alignItems="center"
+            mt="20px"
+            mr="200px"
+            width="650px"
+          >
+            <Button variant="filled">Button</Button>
+            <Button variant="filled">Button</Button>
+            <Button variant="filled">Button</Button>
+            <Button variant="filled">Button</Button>
+            <Button variant="filled">Button</Button>
+          </Box>
+          <Box
+            direction="row"
+            justifyContent="spaceBetween"
+            alignItems="center"
+            mt="20px"
+            mb="40px"
+            width="650px"
+          >
+            <Button variant="filled">Button</Button>
+            <Button variant="filled">Button</Button>
+            <Button variant="filled">Button</Button>
+            <Button variant="filled">Button</Button>
+            <Button variant="filled">Button</Button>
+          </Box>
         </Box>
-        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
-          <Button variant="filled">Button</Button>
-          <Button variant="filled">Button</Button>
-          <Button variant="filled">Button</Button>
-          <Button variant="filled">Button</Button>
-          <Button variant="filled">Button</Button>
+        <Typography>Outlined buttons</Typography>
+        <Box direction="column">
+          <Box
+            direction="row"
+            justifyContent="spaceBetween"
+            alignItems="center"
+            mt="20px"
+            width="700px"
+          >
+            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Enabled</Button>
+          </Box>
+          <Box
+            direction="row"
+            justifyContent="spaceBetween"
+            alignItems="center"
+            mt="20px"
+            mb="40px"
+            width="700px"
+          >
+            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Enabled</Button>
+          </Box>
         </Box>
-      </Box>
-      <Typography>Outlined buttons</Typography>
-      <Box direction="column">
-        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
-          <Button variant="outlined">Enabled</Button>
-          <Button variant="outlined">Enabled</Button>
-          <Button variant="outlined">Enabled</Button>
-          <Button variant="outlined">Enabled</Button>
-          <Button variant="outlined">Enabled</Button>
-        </Box>
-        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
-          <Button variant="outlined">Enabled</Button>
-          <Button variant="outlined">Enabled</Button>
-          <Button variant="outlined">Enabled</Button>
-          <Button variant="outlined">Enabled</Button>
-          <Button variant="outlined">Enabled</Button>
-        </Box>
-      </Box>
-      <Typography>Text buttons</Typography>
-      <Box direction="column">
-        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
-          <Button variant="text">Enabled</Button>
-          <Button variant="text">Enabled</Button>
-          <Button variant="text">Enabled</Button>
-          <Button variant="text">Enabled</Button>
-          <Button variant="text">Enabled</Button>
-        </Box>
-        <Box direction="row" justifyContent="spaceBetween" alignItems="center">
-          <Button variant="text">Enabled</Button>
-          <Button variant="text">Enabled</Button>
-          <Button variant="text">Enabled</Button>
-          <Button variant="text">Enabled</Button>
-          <Button variant="text">Enabled</Button>
+        <Typography>Text buttons</Typography>
+        <Box direction="column">
+          <Box
+            direction="row"
+            justifyContent="spaceBetween"
+            alignItems="center"
+            mt="20px"
+            width="700px"
+          >
+            <Button variant="text">Enabled</Button>
+            <Button variant="text">Enabled</Button>
+            <Button variant="text">Enabled</Button>
+            <Button variant="text">Enabled</Button>
+            <Button variant="text">Enabled</Button>
+          </Box>
+          <Box
+            direction="row"
+            justifyContent="spaceBetween"
+            alignItems="center"
+            mt="20px"
+            mb="40px"
+            width="700px"
+          >
+            <Button variant="text">Enabled</Button>
+            <Button variant="text">Enabled</Button>
+            <Button variant="text">Enabled</Button>
+            <Button variant="text">Enabled</Button>
+            <Button variant="text">Enabled</Button>
+          </Box>
         </Box>
       </Box>
       <Button fullWidth>Button</Button>

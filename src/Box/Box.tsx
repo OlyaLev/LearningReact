@@ -1,5 +1,5 @@
 import styles from './Box.module.css';
-import { type ReactNode } from 'react';
+import { type CSSProperties, type ReactNode } from 'react';
 
 const directions = {
   row: styles.row,
@@ -44,7 +44,7 @@ type Props = {
    * </Box>
    */
   wrap?: 'wrap' | 'wrapReverse' | 'noWrap';
-  width?: boolean;
+  width?: string;
   /**
    * Prop to set margin-left
    * @example
@@ -189,105 +189,93 @@ export const Box = (props: Props) => {
     p,
     children,
   } = props;
-  const mlStyle =
+  const mlStyle: CSSProperties =
     typeof ml === 'number'
       ? { marginLeft: `${ml * 8}px` }
       : typeof ml === 'string'
       ? { marginLeft: ml }
       : {};
-  const mtStyle =
+  const mtStyle: CSSProperties =
     typeof mt === 'number'
       ? { marginTop: `${mt * 8}px` }
       : typeof mt === 'string'
       ? { marginTop: mt }
       : {};
-  const mrStyle =
+  const mrStyle: CSSProperties =
     typeof mr === 'number'
       ? { marginRight: `${mr * 8}px` }
       : typeof mr === 'string'
       ? { marginRight: mr }
       : {};
-  const mbStyle =
+  const mbStyle: CSSProperties =
     typeof mb === 'number'
       ? { marginBottom: `${mb * 8}px` }
       : typeof mb === 'string'
       ? { marginBottom: mb }
       : {};
-  const mxStyle =
+  const mxStyle: CSSProperties =
     typeof mx === 'number'
       ? { marginLeft: `${mx * 8}px`, marginRight: `${mx * 8}px` }
       : typeof mx === 'string'
       ? { marginLeft: mx, marginRight: mx }
       : {};
-  const myStyle =
+  const myStyle: CSSProperties =
     typeof my === 'number'
       ? { marginTop: `${my * 8}px`, marginBottom: `${my * 8}px` }
       : typeof my === 'string'
       ? { marginTop: my, marginBottom: my }
       : {};
-  const mStyle =
+  const mStyle: CSSProperties =
     typeof m === 'number'
       ? {
-          marginLeft: `${m * 8}px`,
-          marginTop: `${m * 8}px`,
-          marginRight: `${m * 8}px`,
-          marginBottom: `${m * 8}px`,
+          margin: `${m * 8}px`,
         }
       : typeof m === 'string'
-      ? { marginLeft: m, marginTop: m, marginRight: m, marginBottom: m }
+      ? { margin: m }
       : {};
-  const plStyle =
+  const plStyle: CSSProperties =
     typeof pl === 'number'
       ? { paddingLeft: `${pl * 8}px` }
       : typeof pl === 'string'
       ? { paddingLeft: pl }
       : {};
-  const ptStyle =
+  const ptStyle: CSSProperties =
     typeof pt === 'number'
       ? { paddingTop: `${pt * 8}px` }
       : typeof pt === 'string'
       ? { paddingTop: pt }
       : {};
-  const prStyle =
+  const prStyle: CSSProperties =
     typeof pr === 'number'
       ? { paddingRight: `${pr * 8}px` }
       : typeof pr === 'string'
       ? { paddingRight: pr }
       : {};
-  const pbStyle =
+  const pbStyle: CSSProperties =
     typeof pb === 'number'
       ? { paddingBottom: `${pb * 8}px` }
       : typeof pb === 'string'
       ? { paddingBottom: pb }
       : {};
-  const pxStyle =
+  const pxStyle: CSSProperties =
     typeof px === 'number'
       ? { paddingLeft: `${px * 8}px`, paddingRight: `${px * 8}px` }
-      : typeof mx === 'string'
+      : typeof px === 'string'
       ? { paddingLeft: px, paddingRight: px }
       : {};
-  const pyStyle =
+  const pyStyle: CSSProperties =
     typeof py === 'number'
       ? { paddingTop: `${py * 8}px`, paddingBottom: `${py * 8}px` }
       : typeof py === 'string'
       ? { paddingTop: py, paddingBottom: py }
       : {};
-  const pStyle =
-    typeof p === 'number'
-      ? {
-          paddingLeft: `${p * 8}px`,
-          paddingTop: `${p * 8}px`,
-          paddingRight: `${p * 8}px`,
-          paddingBottom: `${p * 8}px`,
-        }
-      : typeof p === 'string'
-      ? { paddingLeft: p, paddingTop: p, paddingRight: p, paddingBottom: p }
-      : {};
+  const pStyle: CSSProperties =
+    typeof p === 'number' ? { padding: `${p * 8}px` } : typeof p === 'string' ? { padding: p } : {};
   const directionStyle = directions[direction];
   const justifyContentStyle = justifyContentVariants[justifyContent];
   const alignItemsStyle = alignItemsVariants[alignItems];
   const wrapStyle = wraps[wrap];
-  const widthStyle = width ? styles.width : '';
+  const widthStyle: CSSProperties = { width: width };
   const spaceStyle = {
     ...mStyle,
     ...mxStyle,
@@ -303,6 +291,7 @@ export const Box = (props: Props) => {
     ...ptStyle,
     ...prStyle,
     ...pbStyle,
+    ...widthStyle,
   };
   return (
     <div
@@ -316,9 +305,7 @@ export const Box = (props: Props) => {
         ' ' +
         alignItemsStyle +
         ' ' +
-        wrapStyle +
-        ' ' +
-        widthStyle
+        wrapStyle
       }
     >
       {children}
