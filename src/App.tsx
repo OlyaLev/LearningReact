@@ -4,6 +4,7 @@ import './App.css';
 import { Button } from './Button/Button';
 import { Typography } from './Typography/Typography';
 import { Box } from './Box/Box';
+import { Icon } from './Icon/Icon';
 
 function App() {
   return (
@@ -121,6 +122,38 @@ function App() {
       <Typography variant="labelLarge">Welcome to the show</Typography>
       <Typography variant="labelMedium">Welcome to the show</Typography>
       <Typography variant="labelSmall">Welcome to the show</Typography>
+      <Box
+        direction="row"
+        justifyContent="spaceBetween"
+        alignItems="center"
+        mt="50px"
+        ml="100px"
+        width="800px"
+      >
+        <Icon icon="search" fontSize="50px"></Icon>
+        <Icon icon="home" fontSize="50px"></Icon>
+        <Icon icon="menu" fontSize="50px"></Icon>
+        <Icon icon="close" fontSize="50px"></Icon>
+        <Icon icon="settings" fontSize="50px"></Icon>
+        <Icon icon="done" fontSize="50px"></Icon>
+        <Icon icon="expand_more" fontSize="50px"></Icon>
+      </Box>
+      <Box
+        direction="row"
+        justifyContent="spaceBetween"
+        alignItems="center"
+        mt="50px"
+        ml="100px"
+        width="800px"
+      >
+        <Icon icon="check_circle" fontSize="50px"></Icon>
+        <Icon icon="favorite" fontSize="50px"></Icon>
+        <Icon icon="add" fontSize="50px"></Icon>
+        <Icon icon="delete" fontSize="50px"></Icon>
+        <Icon icon="star" fontSize="50px"></Icon>
+        <Icon icon="arrow_back" fontSize="50px"></Icon>
+        <Icon icon="chevron_right" fontSize="50px"></Icon>
+      </Box>
     </div>
   );
 }
