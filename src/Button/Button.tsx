@@ -1,4 +1,5 @@
 import { Typography } from '../Typography/Typography';
+import { Box } from '../Box/Box';
 import styles from './Button.module.css';
 import { type ReactNode } from 'react';
 type Props = {
@@ -42,9 +43,11 @@ export const Button = (props: Props) => {
         outlinedStyle
       }
     >
-      <Typography color={colorStyle} variant="labelLarge">
-        {children}
-      </Typography>
+      <Box p="10px 30px">
+        <Typography color={colorStyle} variant="labelLarge">
+          {children}
+        </Typography>
+      </Box>
     </button>
   );
 };
