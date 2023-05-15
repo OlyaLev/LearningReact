@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-let qwe = document.getElementById('root');
-if (document.getElementById('root') !== null) {
-  const root = ReactDOM.createRoot(document.getElementById('root'));
+const qwe = document.getElementById('root');
+if (qwe !== null) {
+  const root = ReactDOM.createRoot(qwe);
   root.render(
     <React.StrictMode>
       <App />

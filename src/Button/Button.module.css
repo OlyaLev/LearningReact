@@ -4,7 +4,7 @@
 }
 
 .mainColors {
-  background-color: var(--md-sys-color-on-primary-light);
+  background-color: unset;
 }
 
 .filledButton {

@@ -18,7 +18,7 @@ type Props = {
   /**
    * Prop to establish the size of icon
    * @example
-   * <Icon fontSize="10px"></Icon>
+   * <Icon icon="search" fontSize="10px"></Icon>
    */
   fontSize?: string;
 };
@@ -30,10 +30,8 @@ export const Icon = (props: Props) => {
   const { fontSize, icon } = props;
   const iconFontSize: CSSProperties = { fontSize: fontSize };
   return (
-    <div>
-      <span style={iconFontSize} className="material-symbols-outlined">
-        {icon}
-      </span>
-    </div>
+    <span style={iconFontSize} className="material-symbols-outlined">
+      {icon}
+    </span>
   );
 };

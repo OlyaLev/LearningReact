@@ -32,13 +32,23 @@ function App() {
             alignItems="center"
             mt="20px"
             mb="40px"
-            width="650px"
+            width="700px"
           >
-            <Button variant="filled">Button</Button>
-            <Button variant="filled">Button</Button>
-            <Button variant="filled">Button</Button>
-            <Button variant="filled">Button</Button>
-            <Button variant="filled">Button</Button>
+            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Enabled
+            </Button>
+            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Hovered
+            </Button>
+            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Focused
+            </Button>
+            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Pressed
+            </Button>
+            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Disabled
+            </Button>
           </Box>
         </Box>
         <Typography>Outlined buttons</Typography>
@@ -48,7 +58,7 @@ function App() {
             justifyContent="spaceBetween"
             alignItems="center"
             mt="20px"
-            width="700px"
+            width="650px"
           >
             <Button variant="outlined">Enabled</Button>
             <Button variant="outlined">Enabled</Button>
@@ -64,11 +74,21 @@ function App() {
             mb="40px"
             width="700px"
           >
-            <Button variant="outlined">Enabled</Button>
-            <Button variant="outlined">Enabled</Button>
-            <Button variant="outlined">Enabled</Button>
-            <Button variant="outlined">Enabled</Button>
-            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Enabled
+            </Button>
+            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Hovered
+            </Button>
+            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Focused
+            </Button>
+            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Pressed
+            </Button>
+            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Disabled
+            </Button>
           </Box>
         </Box>
         <Typography>Text buttons</Typography>
@@ -78,7 +98,7 @@ function App() {
             justifyContent="spaceBetween"
             alignItems="center"
             mt="20px"
-            width="700px"
+            width="650px"
           >
             <Button variant="text">Enabled</Button>
             <Button variant="text">Enabled</Button>
@@ -94,11 +114,21 @@ function App() {
             mb="40px"
             width="700px"
           >
-            <Button variant="text">Enabled</Button>
-            <Button variant="text">Enabled</Button>
-            <Button variant="text">Enabled</Button>
-            <Button variant="text">Enabled</Button>
-            <Button variant="text">Enabled</Button>
+            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Enabled
+            </Button>
+            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Hovered
+            </Button>
+            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Focused
+            </Button>
+            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Pressed
+            </Button>
+            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+              Disabled
+            </Button>
           </Box>
         </Box>
       </Box>
