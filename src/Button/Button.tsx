@@ -49,7 +49,7 @@ export const Button = (props: Props) => {
   const filledStyle = variant === 'filled' ? styles.filledButton : '';
   const colorStyle = colorType[variant];
   const paddingLeft = startIcon ? paddingType.iconPadding : paddingType.noIconPadding;
-  const marginRight = startIcon ? marginType.iconMargin : marginType.noIconMargin;
+  const marginRight = startIcon ? '8px' : '0px';
   return (
     <button
       className={
@@ -65,12 +65,16 @@ export const Button = (props: Props) => {
       }
     >
       <Box py="10px" pr="24px" pl={paddingLeft}>
-        <Typography color={colorStyle} variant="labelLarge">
-          <Box>
-            <Box mr={marginRight}>{startIcon}</Box>
+        <Box direction="row" justifyContent="start" alignItems="center">
+          <Typography color={colorStyle}>
+            <Box direction="row" justifyContent="start" alignItems="center" mr={marginRight}>
+              {startIcon}
+            </Box>
+          </Typography>
+          <Typography color={colorStyle} variant="labelLarge">
             {children}
-          </Box>
-        </Typography>
+          </Typography>
+        </Box>
       </Box>
     </button>
   );

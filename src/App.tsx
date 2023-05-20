@@ -34,19 +34,19 @@ function App() {
             mb="40px"
             width="700px"
           >
-            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="filled" startIcon={<Icon icon="add" />}>
               Enabled
             </Button>
-            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="filled" startIcon={<Icon icon="add" />}>
               Hovered
             </Button>
-            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="filled" startIcon={<Icon icon="add" />}>
               Focused
             </Button>
-            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="filled" startIcon={<Icon icon="add" />}>
               Pressed
             </Button>
-            <Button variant="filled" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="filled" startIcon={<Icon icon="add" />}>
               Disabled
             </Button>
           </Box>
@@ -74,19 +74,19 @@ function App() {
             mb="40px"
             width="700px"
           >
-            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="outlined" startIcon={<Icon icon="add" />}>
               Enabled
             </Button>
-            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="outlined" startIcon={<Icon icon="add" />}>
               Hovered
             </Button>
-            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="outlined" startIcon={<Icon icon="add" />}>
               Focused
             </Button>
-            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="outlined" startIcon={<Icon icon="add" />}>
               Pressed
             </Button>
-            <Button variant="outlined" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="outlined" startIcon={<Icon icon="add" />}>
               Disabled
             </Button>
           </Box>
@@ -114,19 +114,19 @@ function App() {
             mb="40px"
             width="700px"
           >
-            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="text" startIcon={<Icon icon="add" />}>
               Enabled
             </Button>
-            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="text" startIcon={<Icon icon="add" />}>
               Hovered
             </Button>
-            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="text" startIcon={<Icon icon="add" />}>
               Focused
             </Button>
-            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="text" startIcon={<Icon icon="add" />}>
               Pressed
             </Button>
-            <Button variant="text" startIcon={<Icon icon="add" fontSize="20px" />}>
+            <Button variant="text" startIcon={<Icon icon="add" />}>
               Disabled
             </Button>
           </Box>
