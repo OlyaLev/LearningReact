@@ -26,16 +26,6 @@ const colorType = {
   filled: 'onPrimary',
 } as const;
 
-const paddingType = {
-  iconPadding: '16px',
-  noIconPadding: '24px',
-} as const;
-
-const marginType = {
-  iconMargin: '8px',
-  noIconMargin: '0px',
-} as const;
-
 /**
  * Button component, implementing **Material Design 3** buttons. Use prop `variant` to choose which button
  * from material design spec to use
@@ -48,8 +38,8 @@ export const Button = (props: Props) => {
   const mainColorsStyle = variant === 'filled' ? '' : styles.mainColors;
   const filledStyle = variant === 'filled' ? styles.filledButton : '';
   const colorStyle = colorType[variant];
-  const paddingLeft = startIcon ? paddingType.iconPadding : paddingType.noIconPadding;
-  const marginRight = startIcon ? '8px' : '0px';
+  const paddingLeft = startIcon ? 2 : 3;
+  const marginRight = startIcon ? 1 : 0;
   return (
     <button
       className={
@@ -64,7 +54,7 @@ export const Button = (props: Props) => {
         outlinedStyle
       }
     >
-      <Box py="10px" pr="24px" pl={paddingLeft}>
+      <Box pr={3} pl={paddingLeft}>
         <Box direction="row" justifyContent="start" alignItems="center">
           <Typography color={colorStyle}>
             <Box direction="row" justifyContent="start" alignItems="center" mr={marginRight}>

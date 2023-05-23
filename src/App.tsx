@@ -21,10 +21,10 @@ function App() {
             width="650px"
           >
             <Button variant="filled">Button</Button>
-            <Button variant="filled">Button</Button>
-            <Button variant="filled">Button</Button>
-            <Button variant="filled">Button</Button>
-            <Button variant="filled">Button</Button>
+            <Button variant="filled">Hovered</Button>
+            <Button variant="filled">Focused</Button>
+            <Button variant="filled">Pressed</Button>
+            <Button variant="filled">Disabled</Button>
           </Box>
           <Box
             direction="row"
@@ -61,10 +61,10 @@ function App() {
             width="650px"
           >
             <Button variant="outlined">Enabled</Button>
-            <Button variant="outlined">Enabled</Button>
-            <Button variant="outlined">Enabled</Button>
-            <Button variant="outlined">Enabled</Button>
-            <Button variant="outlined">Enabled</Button>
+            <Button variant="outlined">Hovered</Button>
+            <Button variant="outlined">Focused</Button>
+            <Button variant="outlined">Pressed</Button>
+            <Button variant="outlined">Disabled</Button>
           </Box>
           <Box
             direction="row"
@@ -101,10 +101,10 @@ function App() {
             width="650px"
           >
             <Button variant="text">Enabled</Button>
-            <Button variant="text">Enabled</Button>
-            <Button variant="text">Enabled</Button>
-            <Button variant="text">Enabled</Button>
-            <Button variant="text">Enabled</Button>
+            <Button variant="text">Hovered</Button>
+            <Button variant="text">Focused</Button>
+            <Button variant="text">Pressed</Button>
+            <Button variant="text">Disabled</Button>
           </Box>
           <Box
             direction="row"

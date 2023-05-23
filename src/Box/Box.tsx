@@ -45,6 +45,7 @@ type Props = {
    */
   wrap?: 'wrap' | 'wrapReverse' | 'noWrap';
   width?: string;
+  height?: string;
   /**
    * Prop to set margin-left
    * @example
@@ -173,6 +174,7 @@ export const Box = (props: Props) => {
     alignItems = 'start',
     wrap = 'noWrap',
     width,
+    height,
     ml,
     mt,
     mr,
@@ -276,6 +278,7 @@ export const Box = (props: Props) => {
   const alignItemsStyle = alignItemsVariants[alignItems];
   const wrapStyle = wraps[wrap];
   const widthStyle: CSSProperties = { width: width };
+  const heightStyle: CSSProperties = { height: height };
   const spaceStyle = {
     ...mStyle,
     ...mxStyle,
@@ -292,6 +295,7 @@ export const Box = (props: Props) => {
     ...prStyle,
     ...pbStyle,
     ...widthStyle,
+    ...heightStyle,
   };
   return (
     <div
