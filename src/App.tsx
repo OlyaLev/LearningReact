@@ -5,6 +5,8 @@ import { Button } from './Button/Button';
 import { Typography } from './Typography/Typography';
 import { Box } from './Box/Box';
 import { Icon } from './Icon/Icon';
+import { Tabs } from './Tabs/Tabs';
+import { Tab } from './Tab/Tab';
 
 function App() {
   return (
@@ -184,6 +186,11 @@ function App() {
         <Icon icon="arrow_back" fontSize="50px"></Icon>
         <Icon icon="chevron_right" fontSize="50px"></Icon>
       </Box>
+      <Tabs>
+        <Tab label="Visibility" selected tabIcon={<Icon icon="visibility" />}></Tab>
+        <Tab label="Visibility Off" tabIcon={<Icon icon="visibility_off" />}></Tab>
+        <Tab label="Language" tabIcon={<Icon icon="language" />}></Tab>
+      </Tabs>
     </div>
   );
 }

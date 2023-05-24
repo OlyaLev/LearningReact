@@ -21,18 +21,16 @@ type Props = {
    * <Icon icon="search" fontSize="10px"></Icon>
    */
   fontSize?: string;
-  className?: string;
 };
 /**
  * Icon component, implementing google icons. Use prop `icon` to choose design variant.
  * @see https://fonts.google.com/icons
  */
 export const Icon = (props: Props) => {
-  const { fontSize, icon, className } = props;
+  const { fontSize, icon } = props;
   const iconFontSize: CSSProperties = { fontSize: fontSize };
-  const classNameType = `material-symbols-outlined ${className}`;
   return (
-    <span style={iconFontSize} className={classNameType}>
+    <span style={iconFontSize} className="material-symbols-outlined">
       {icon}
     </span>
   );
