@@ -189,7 +189,7 @@ function App() {
       <Tabs>
         <Tab label="Visibility" selected tabIcon={<Icon icon="visibility" />}></Tab>
         <Tab label="Visibility Off" tabIcon={<Icon icon="visibility_off" />}></Tab>
-        <Tab label="Language" tabIcon={<Icon icon="language" />}></Tab>
+        <Tab label="Language" selected tabIcon={<Icon icon="language" />}></Tab>
       </Tabs>
     </div>
   );

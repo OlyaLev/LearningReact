@@ -14,7 +14,10 @@ type Props = {
     | 'delete'
     | 'arrow_back'
     | 'star'
-    | 'chevron_right';
+    | 'chevron_right'
+    | 'visibility'
+    | 'visibility_off'
+    | 'language';
   /**
    * Prop to establish the size of icon
    * @example

@@ -52,4 +52,5 @@ body {
 
 button {
   padding: 0;
+  cursor: pointer;
 }
