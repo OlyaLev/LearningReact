@@ -1,0 +1,119 @@
+.primary {
+  color: var(--md-sys-color-primary-light);
+}
+
+.primaryContainer {
+  color: var(--md-sys-color-primary-container-light);
+}
+
+.onPrimary {
+  color: var(--md-sys-color-on-primary-light);
+}
+
+.onPrimaryContainer {
+  color: var(--md-sys-color-on-primary-container-light);
+}
+
+.secondary {
+  color: var(--md-sys-color-secondary-light);
+}
+
+.secondaryContainer {
+  color: var(--md-sys-color-secondary-container-light);
+}
+
+.onSecondary {
+  color: var(--md-sys-color-on-secondary-light);
+}
+
+.onSecondaryContainer {
+  color: var(--md-sys-color-on-secondary-container-light);
+}
+
+.tertiary {
+  color: var(--md-sys-color-tertiary-light);
+}
+
+.tertiaryContainer {
+  color: var(--md-sys-color-tertiary-container-light);
+}
+
+.onTertiary {
+  color: var(--md-sys-color-on-tertiary-light);
+}
+
+.onTertiaryContainer {
+  color: var(--md-sys-color-on-tertiary-container-light);
+}
+
+.error {
+  color: var(--md-sys-color-error-light);
+}
+
+.errorContainer {
+  color: var(--md-sys-color-error-container-light);
+}
+
+.onError {
+  color: var(--md-sys-color-on-error-light);
+}
+
+.onErrorContainer {
+  color: var(--md-sys-color-on-error-container-light);
+}
+
+.outline {
+  color: var(--md-sys-color-outline-light);
+}
+
+.background {
+  color: var(--md-sys-color-background-light);
+}
+
+.onBackground {
+  color: var(--md-sys-color-on-background-light);
+}
+
+.surface {
+  color: var(--md-sys-color-surface-light);
+}
+
+.onSurface {
+  color: var(--md-sys-color-on-surface-light);
+}
+
+.surfaceVariant {
+  color: var(--md-sys-color-surface-variant-light);
+}
+
+.onSurfaceVariant {
+  color: var(--md-sys-color-on-surface-variant-light);
+}
+
+.inverseSurface {
+  color: var(--md-sys-color-inverse-surface-light);
+}
+
+.inverseOnSurface {
+  color: var(--md-sys-color-inverse-on-surface-light);
+}
+
+.inversePrimary {
+  color: var(--md-sys-color-inverse-primary-light);
+}
+
+.shadow {
+  color: var(--md-sys-color-shadow-light);
+}
+
+.surfaceTint {
+  color: var(--md-sys-color-surface-tint-light);
+}
+
+.outlineVariant {
+  color: var(--md-sys-color-outline-variant-light);
+}
+
+.scrim {
+  color: var(--md-sys-color-scrim-light);
+}

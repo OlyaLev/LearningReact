@@ -1,5 +1,7 @@
 import { CSSProperties } from 'react';
+import { colors, type Color } from '../utils/color';
 type Props = {
+  color?: Color;
   icon:
     | 'search'
     | 'home'
@@ -30,10 +32,11 @@ type Props = {
  * @see https://fonts.google.com/icons
  */
 export const Icon = (props: Props) => {
-  const { fontSize, icon } = props;
+  const { fontSize, icon, color } = props;
   const iconFontSize: CSSProperties = { fontSize: fontSize };
+  const colorStyle = color ? colors[color] : '';
   return (
-    <span style={iconFontSize} className="material-symbols-outlined">
+    <span style={iconFontSize} className={`${colorStyle} material-symbols-outlined`}>
       {icon}
     </span>
   );

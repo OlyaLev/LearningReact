@@ -2,6 +2,7 @@ import styles from './Button.module.css';
 import { Typography } from '../Typography/Typography';
 import { Box } from '../Box/Box';
 import { type ReactNode } from 'react';
+import { colors } from '../utils/color';
 
 type Props = {
   fullWidth?: boolean;
@@ -56,11 +57,9 @@ export const Button = (props: Props) => {
     >
       <Box pr={3} pl={paddingLeft}>
         <Box direction="row" justifyContent="start" alignItems="center">
-          <Typography color={colorStyle}>
-            <Box direction="row" justifyContent="start" alignItems="center" mr={marginRight}>
-              {startIcon}
-            </Box>
-          </Typography>
+          <Box direction="row" justifyContent="start" alignItems="center" mr={marginRight}>
+            <div className={colors[colorStyle]}>{startIcon}</div>
+          </Box>
           <Typography color={colorStyle} variant="labelLarge">
             {children}
           </Typography>

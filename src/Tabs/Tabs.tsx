@@ -8,9 +8,10 @@ export const Tabs = (props: Props) => {
   const { children } = props;
   return (
     <div className={styles.container}>
-      <Box direction="row" justifyContent="spaceBetween" alignItems="center" mx={20} my={10}>
+      <Box direction="row" justifyContent="spaceBetween" alignItems="center">
         {children}
       </Box>
+      <div className={styles.divider}></div>
     </div>
   );
 };

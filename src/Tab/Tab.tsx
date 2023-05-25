@@ -2,6 +2,7 @@ import styles from './Tab.module.css';
 import { type ReactNode } from 'react';
 import { Typography } from '../Typography/Typography';
 import { Box } from '../Box/Box';
+import { colors } from '../utils/color';
 
 type Props = {
   label: string;
@@ -12,15 +13,16 @@ type Props = {
 export const Tab = (props: Props) => {
   const { label, selected, tabIcon } = props;
   const colorType = selected ? 'primary' : 'onSurface';
-  const activeInd = selected ? styles.activeIndicatorExist : styles.activeIndicator;
   return (
-    <button className={styles.tabCommon}>
-      <Box direction="column" justifyContent="center" alignItems="center">
-        <Typography color={colorType}>{tabIcon}</Typography>
-        <Typography variant="titleSmall" color={colorType}>
-          {label}
-        </Typography>
-        <div className={activeInd}></div>
+    <button className={styles.tabCommon + ' ' + styles.tabHeight}>
+      <Box direction="column" justifyContent="start" alignItems="center" height="100%">
+        <div className={colors[colorType] + ' ' + styles.iconContainer}>{tabIcon}</div>
+        <Box direction="column" justifyContent="spaceBetween" alignItems="center" height="48px">
+          <Typography variant="titleSmall" color={colorType}>
+            {label}
+          </Typography>
+          {selected ? <div className={styles.activeIndicator}></div> : null}
+        </Box>
       </Box>
     </button>
   );
