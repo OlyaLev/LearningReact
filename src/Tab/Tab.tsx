@@ -13,13 +13,14 @@ type Props = {
 export const Tab = (props: Props) => {
   const { label, selected, tabIcon } = props;
   const colorType = selected ? 'primary' : 'onSurface';
+  const marginSelect = selected ? '' : styles.marginSelect;
   return (
-    <button className={styles.tabCommon + ' ' + styles.tabHeight}>
-      <Box direction="column" justifyContent="start" alignItems="center" height="100%">
+    <button className={styles.tabCommon}>
+      <Box direction="column" justifyContent="start" alignItems="center" mt={tabIcon ? '' : '27px'}>
         <div className={colors[colorType] + ' ' + styles.iconContainer}>{tabIcon}</div>
-        <Box direction="column" justifyContent="spaceBetween" alignItems="center" height="48px">
+        <Box direction="column" justifyContent="start" alignItems="center">
           <Typography variant="titleSmall" color={colorType}>
-            {label}
+            <div className={marginSelect}>{label}</div>
           </Typography>
           {selected ? <div className={styles.activeIndicator}></div> : null}
         </Box>

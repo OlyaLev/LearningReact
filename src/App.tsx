@@ -7,6 +7,7 @@ import { Box } from './Box/Box';
 import { Icon } from './Icon/Icon';
 import { Tabs } from './Tabs/Tabs';
 import { Tab } from './Tab/Tab';
+import { Divider } from './Divider/Divider';
 
 function App() {
   return (
@@ -190,7 +191,20 @@ function App() {
         <Tab label="Visibility" selected tabIcon={<Icon icon="visibility" />}></Tab>
         <Tab label="Visibility Off" tabIcon={<Icon icon="visibility_off" />}></Tab>
         <Tab label="Language" selected tabIcon={<Icon icon="language" />}></Tab>
+        <Tab label="Settings" tabIcon={<Icon icon="settings" />}></Tab>
+        <Tab label="Favorite" selected></Tab>
+        <Tab label="Delete"></Tab>
       </Tabs>
+      <Divider></Divider>
+      <Tabs>
+        <Tab label="Visibility" selected tabIcon={<Icon icon="visibility" />}></Tab>
+        <Tab label="Visibility Off" tabIcon={<Icon icon="visibility_off" />}></Tab>
+        <Tab label="Language" selected tabIcon={<Icon icon="language" />}></Tab>
+        <Tab label="Settings" tabIcon={<Icon icon="settings" />}></Tab>
+        <Tab label="Favorite" selected tabIcon={<Icon icon="favorite" />}></Tab>
+        <Tab label="Delete" tabIcon={<Icon icon="delete" />}></Tab>
+      </Tabs>
+      <Divider></Divider>
     </div>
   );
 }
