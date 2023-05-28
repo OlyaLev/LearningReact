@@ -1,8 +1,8 @@
 import styles from './Tab.module.css';
 import { type ReactNode } from 'react';
-import { Typography } from '../Typography/Typography';
-import { Box } from '../Box/Box';
-import { colors } from '../utils/color';
+import { Typography } from '../../Typography/Typography';
+import { Box } from '../../Box/Box';
+import { colors } from '../../utils/color';
 
 type Props = {
   label: string;

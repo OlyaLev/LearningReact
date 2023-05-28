@@ -1,13 +1,7 @@
 import './tokens.css';
 import './theme.light.css';
 import './App.css';
-import { Button } from './Button/Button';
-import { Typography } from './Typography/Typography';
-import { Box } from './Box/Box';
-import { Icon } from './Icon/Icon';
-import { Tabs } from './Tabs/Tabs';
-import { Tab } from './Tab/Tab';
-import { Divider } from './Divider/Divider';
+import { Box, Button, Divider, Icon, Tabs, Tab, Typography } from './material-design';
 
 function App() {
   return (
