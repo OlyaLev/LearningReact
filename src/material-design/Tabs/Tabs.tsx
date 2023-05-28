@@ -4,6 +4,11 @@ import { Box } from '../Box/Box';
 type Props = {
   children?: ReactNode;
 };
+
+/**
+ * Tabs component, implementing **Material Design 3** tab bar.
+ * @see https://m3.material.io/components/tabs/overview
+ */
 export const Tabs = (props: Props) => {
   const { children } = props;
   return (

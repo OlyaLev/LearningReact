@@ -10,6 +10,10 @@ type Props = {
   tabIcon?: ReactNode;
 };
 
+/**
+ * Tab component, implementing **Material Design 3** tab. Use prop `label` to choose a name of the tab.
+ * @see https://m3.material.io/components/tabs/overview
+ */
 export const Tab = (props: Props) => {
   const { label, selected, tabIcon } = props;
   const colorType = selected ? 'primary' : 'onSurface';
