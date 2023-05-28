@@ -5,3 +5,4 @@ export { Icon } from './Icon/Icon';
 export { Tabs } from './Tabs/Tabs';
 export { Tab } from './Tabs/Tab/Tab';
 export { Typography } from './Typography/Typography';
+export { Switch } from './Switch/Switch';

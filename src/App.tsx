@@ -1,7 +1,7 @@
 import './tokens.css';
 import './theme.light.css';
 import './App.css';
-import { Box, Button, Divider, Icon, Tabs, Tab, Typography } from './material-design';
+import { Box, Button, Divider, Icon, Switch, Tabs, Tab, Typography } from './material-design';
 
 function App() {
   return (
@@ -199,6 +199,8 @@ function App() {
         <Tab label="Delete" tabIcon={<Icon icon="delete" />}></Tab>
       </Tabs>
       <Divider></Divider>
+      <Switch></Switch>
+      <Switch on></Switch>
     </div>
   );
 }
