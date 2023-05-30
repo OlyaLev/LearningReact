@@ -1,8 +1,8 @@
-export { Box } from './Box/Box';
-export { Button } from './Button/Button';
-export { Divider } from './Divider/Divider';
-export { Icon } from './Icon/Icon';
-export { Tabs } from './Tabs/Tabs';
-export { Tab } from './Tabs/Tab/Tab';
-export { Typography } from './Typography/Typography';
-export { Switch } from './Switch/Switch';
+export { Box } from './Box';
+export { Button } from './Button';
+export { Divider } from './Divider';
+export { Icon } from './Icon';
+export { Tabs } from './Tabs';
+export { Tab } from './Tabs/Tab';
+export { Typography } from './Typography';
+export { Switch } from './Switch';
