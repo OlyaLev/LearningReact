@@ -198,8 +198,8 @@ function App() {
         <Tab label="Delete" tabIcon={<Icon icon="delete" />}></Tab>
       </Tabs>
       <Divider></Divider>
-      <Switch></Switch>
-      <Switch checked></Switch>
+      <Switch label="Wi-Fi"></Switch>
+      <Switch label="Bluetooth"></Switch>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.switchContainer {
+/* .switchContainer {
   height: 32px;
   width: 52px;
   border-radius: 100px;
@@ -27,4 +27,49 @@
   border-radius: 24px;
   border: none;
   background-color: var(--md-sys-color-on-primary-light);
+} */
+
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.toggleSwitch .switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid var(--md-sys-color-outline);
+  border-radius: 100px;
+  background-color: var(--md-sys-color-outline-variant-light);
+  transition: all 0.2s ease;
+}
+
+.toggleSwitch .switch::before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  top: 7px;
+  left: 8px;
+  border-radius: 16px;
+  background-color: var(--md-sys-color-outline);
+  transition: transform 0.3s ease;
+}
+
+.toggleSwitch input[type='checkbox']:checked + .switch::before {
+  height: 24px;
+  width: 24px;
+  top: 4px;
+  background-color: var(--md-sys-color-on-primary-light);
+  transform: translateX(16px);
+}
+
+.toggleSwitch input[type='checkbox']:checked + .switch {
+  background-color: var(--md-sys-color-primary);
+  border: none;
 }

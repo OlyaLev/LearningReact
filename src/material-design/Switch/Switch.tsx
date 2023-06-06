@@ -1,7 +1,11 @@
 import styles from './Switch.module.css';
+import { Box } from '../Box';
+import { Typography } from '../Typography';
+import React, { useState } from 'react';
 
 type Props = {
-  checked?: boolean;
+  // checked?: boolean;
+  label: string;
 };
 
 /**
@@ -10,12 +14,18 @@ type Props = {
  * @see https://m3.material.io/components/switch/overview
  */
 export const Switch = (props: Props) => {
-  const { checked } = props;
-  const switchOn = checked ? styles.switchOnContainer : '';
-  const circleType = checked ? styles.switchOnCircle : styles.switchOffCircle;
+  const { label } = props;
+  // const switchOn = checked ? styles.switchOnContainer : '';
+  // const circleType = checked ? styles.switchOnCircle : styles.switchOffCircle;
+  const [isToggled, setIsToggled] = useState(false);
+  const onToggle = () => setIsToggled(!isToggled);
   return (
-    <button className={styles.switchContainer + ' ' + switchOn}>
-      <div className={circleType}></div>
-    </button>
+    <Box direction="row" justifyContent="spaceEvenly" alignItems="center">
+      <Typography>{label}</Typography>
+      <label className={styles.toggleSwitch}>
+        <input type="checkbox" checked={isToggled} onChange={onToggle} />
+        <span className={styles.switch} />
+      </label>
+    </Box>
   );
 };
